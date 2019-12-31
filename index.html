@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Pasal | Welcome</title>
+</head>
+<body>
+    <section id="app-wrapper">
+        <nav id="main-navbar">
+            <h1 class="masthead">Pasal</h1>
+            <ul id="main-nav">
+                <li class="main-link">Home</li>
+                <li class="main-link">About</li>
+                <li class="main-link">Contact</li>
+            </ul>
+        </nav>
+        <main id="home-page" class="main-page">
+            <section id="pasal">
+                <main id="product-container">
+                    <h2 class="section-title">Products</h2>
+                    <div class="search-container">
+                        <input type="text" name='search' id='search' placeholder="search products">
+                        <button id="search-button">Search Products</button>
+                    </div>
+                        <!--Need event.preventDefault()-->
+                    <ul class="product-nav" id="product-nav">
+                        <li class="product-nav-link">All</li>
+                        <li class="product-nav-link">On Sale</li>
+                        <li class="product-nav-link">Featured</li>
+                    </ul>
+                    <article id="all-products" class="products">
+                        <h3 class="section-title">All Products</h3>
+                        <section id="all-product-list" class="product-list"></section>
+                    </article>
+                    <article id="sale-products" class="products">
+                        <h3 class="section-title">Sale Products</h3>
+                        <section id="sale-product-list" class="product-list"></section>
+                    </article>
+                    <article id="featured-products" class="products">
+                        <h3 class="section-title">Featured Products</h3>
+                        <section id="featured-product-list" class="product-list"></section>
+                    </article>
+                </main>
+                <main id="cart-container">
+                    <h2 class="section-title">Shopping Cart</h2>
+                    <article id="shopping-cart"></article>
+                    <p>Grand Total: <span id="cart-grand-total"></span></p>
+                    <p id="checkout-button">Checkout</p>
+                </main>
+            </section>
+        </main>
+        <main id="about-page" class="main-page">
+            About
+        </main>
+        <main id="contact-page" class="main-page">
+            Contact
+        </main>
+        <footer>
+            <p>&copy; Anil Bhattarai 2019 - <span id="copy-right-year"></span></p>
+        </footer>
+    </section>
+
+    <script src="/mjs/app.mjs" type="module"></script>
+</body>
+</html>
